@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_text_size">30sp</dimen>
+    <dimen name="header_text_size">22sp</dimen>
+    <dimen name="info_text_size">20sp</dimen>
+    <dimen name="ten_bottom">10dp</dimen>
+    <dimen name="five_bottom">5dp</dimen>
+    <dimen name="eight_bottom">8dp</dimen>
+    <dimen name="sixteen_bottom">16dp</dimen>
+</resources>

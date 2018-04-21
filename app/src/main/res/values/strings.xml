@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Popular movies</string>
+
+    <string name="action_refresh">↺</string>
+    <string name="error_message">
+        An error has occurred. Please try again by clicking ↺
+    </string>
+    <string name="action_share">Share</string>
+    <string name="highest_rated">Highest Rated</string>
+    <string name="most_popular">Most popular</string>
+    <string name="my_favorite">My favorite</string>
+    <string name="plot_synopsis">Plot synopsis</string>
+    <string name="release_date">Release date</string>
+    <string name="vote_average">Vote average</string>
+    <string name="movie_poster">Movie poster</string>
+    <string name="next_page">Next &gt;</string>
+    <string name="prev_page">&lt; Prev</string>
+    <string name="results_list">results</string>
+    <string name="vote_average_json">vote_average</string>
+    <string name="poster_path">poster_path</string>
+    <string name="release_date_json">release_date</string>
+    <string name="overview">overview</string>
+    <string name="title">title</string>
+    <string name="vote_average.desc">vote_average.desc</string>
+
+    <string name="picture_link">https://image.tmdb.org/t/p/w500</string>
+
+    <string name="api_key_version_3">YOUR_API_KEY</string>
+    <string name="api_key">api_key</string>
+    <string name="popularity.desc">popularity.desc</string>
+    <string name="sort_by">sort_by</string>
+    <string name="url_discover_movie">http://api.themoviedb.org/3/discover/movie</string>
+    <string name="url_movie">https://api.themoviedb.org/3/movie/</string>
+    <string name="url_movie_popular">https://api.themoviedb.org/3/movie/popular</string>
+    <string name="url_movie_top_rated"> http://api.themoviedb.org/3/movie/top_rated</string>
+    <string name="url_youtube">https://www.youtube.com/watch?</string>
+    <string name="append_to_response">append_to_response</string>
+    <string name="videos">videos</string>
+    <string name="v">v</string>
+    <string name="reviews">reviews</string>
+    <string name="reviews_url">/reviews</string>
+
+    <string name="page">page</string>
+
+    <string name="type">type</string>
+    <string name="built_URI">Built URI </string>
+    <string name="movies_app">#MoviesApp</string>
+    <string name="add_button_movie">Make as favorite movie</string>
+    <string name="remove_button_movie">Remove from favorite movie</string>
+    <string name="read_reviews">Read reviews</string>
+
+    <string name="author">author</string>
+    <string name="id">id</string>
+    <string name="content">content</string>
+    <string name="url">url</string>
+    <string name="movie">movie</string>
+    <string name="key">key</string>
+    <string name="name">name</string>
+    <string name="site">site</string>
+    <string name="size">size</string>
+
+
+</resources>

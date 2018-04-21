@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/ten_bottom">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/five_bottom"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/movie_poster"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/release_date"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vote_average"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/tv_vote_average"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plot_synopsis"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/tv_movie_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/info_text_size" />
+
+        <Button
+            android:id="@+id/add_to_waitlist_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight_bottom"
+            android:layout_marginTop="@dimen/eight_bottom"
+            android:onClick="addToFavoriteMovie"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
+
+
+        <Button
+            android:id="@+id/reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight_bottom"
+            android:layout_marginTop="@dimen/eight_bottom"
+            android:background="@color/colorPrimary"
+            android:onClick="readReviews"
+            android:text="@string/read_reviews"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
+
+        <moera.ermais.google.com.popular_movies.TrailerListView
+            android:id="@+id/list_view_trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
+
