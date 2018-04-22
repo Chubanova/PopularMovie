@@ -11,13 +11,6 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/ten_bottom">
 
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/primary_text"
-            android:textSize="@dimen/title_text_size" />
-
         <ImageView
             android:id="@+id/image_iv"
             android:layout_width="match_parent"
@@ -25,6 +18,10 @@
             android:layout_marginBottom="@dimen/five_bottom"
             android:adjustViewBounds="true"
             android:contentDescription="@string/movie_poster"
+            android:paddingBottom="@dimen/two_bottom"
+            android:paddingLeft="@dimen/five_bottom"
+            android:paddingRight="@dimen/five_bottom"
+            android:paddingTop="@dimen/five_bottom"
             android:scaleType="centerCrop" />
 
         <TextView

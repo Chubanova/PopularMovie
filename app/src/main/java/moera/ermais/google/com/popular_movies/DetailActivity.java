@@ -51,7 +51,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
     private Movie movie;
 
     private TextView overviewTV;
-    private TextView titleTV;
+//    private TextView titleTV;
     private TextView voteAverageTV;
     private TextView releaseDateTV;
     private ImageView poster;
@@ -72,7 +72,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
         setContentView(R.layout.activity_detail);
 
         overviewTV = findViewById(R.id.tv_movie_overview);
-        titleTV = findViewById(R.id.tv_title);
+//        titleTV = findViewById(R.id.tv_title);
         voteAverageTV = findViewById(R.id.tv_vote_average);
         releaseDateTV = findViewById(R.id.tv_release_date);
         poster = findViewById(R.id.image_iv);
@@ -96,7 +96,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
             movie = movieData.getParcelableExtra(Intent.EXTRA_INTENT);
             getSupportActionBar().setTitle(movie.getTitle());
             overviewTV.setText(movie.getOverview());
-            titleTV.setText(movie.getTitle());
+//            titleTV.setText(movie.getTitle());
             voteAverageTV.setText(String.valueOf(movie.getVoteAverage()));
             releaseDateTV.setText(movie.getReleaseDate());
             if (movie.getPoster() != null) {

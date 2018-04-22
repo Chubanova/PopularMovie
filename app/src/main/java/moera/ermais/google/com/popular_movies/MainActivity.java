@@ -73,9 +73,9 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         mNavigationView.setNavigationItemSelectedListener(
                 menuItem -> {
                     menuItem.setChecked(true);
+                    setTitle(menuItem);
                     resetMovies(1, menuItem.getItemId());
                     mDrawerLayout.closeDrawers();
-                    setTitle();
                     return true;
                 });
 
@@ -96,13 +96,14 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             startActivity(intent);
         });
 
-        setTitle();
+        setTitle((MenuItem) null);
     }
 
-    private void setTitle() {
+    private void setTitle(MenuItem menuItem) {
         if (getSupportActionBar() != null)
             getSupportActionBar().setTitle(
-                    mNavigationView.getMenu().findItem(getSelectedMenuItemId()).getTitle());
+                    menuItem != null ? menuItem.getTitle() :
+                            mNavigationView.getMenu().findItem(getSelectedMenuItemId()).getTitle());
     }
 
     private void loadMoviesData(int type, int page) {
